@@ -3,11 +3,11 @@ from dice import Die
 
 # Create two D6 dice.
 die_1 = Die()
-die_2 = Die(10)
+die_2 = Die()
 # Make some rolls, and store results in a list.
 results = []
 for roll_num in range(50_000):
-    result = die_1.roll() + die_2.roll()
+    result = die_1.roll() * die_2.roll()
     results.append(result)
 # Analyze the results.
 frequencies = []
